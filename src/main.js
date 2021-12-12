@@ -1,12 +1,15 @@
 import Vue from "vue"
 import VueRouter from "vue-router"
 
+import vuetify from './plugins/vuetify'
+
 import Home from "@/pages/Home"
 import About from "@/pages/About"
 import Incrementor from "@/pages/Incrementor"
 import NotFound from "@/pages/NotFound"
 
 import WithComputed from "./components/WithComputed"
+
 
 Vue.use(VueRouter)
 
@@ -24,5 +27,6 @@ const router = new VueRouter({
 })
 
 new Vue({
+  vuetify,
   router,
-}).$mount('#app')
+}).$mount('v-app')

@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="">
-  <body>
-      <div id="app">
-          <h1>Basic router</h1>
-          <ul>
-              <li><router-link to="/">/</router-link></li>
-              <li><router-link to="/about">/about</router-link></li>
-              <li><router-link to="/incrementor">/incrementor</router-link></li>
-              <li><router-link to="/with_computed">/with_computed</router-link></li>
-              <li><router-link to="/wrong_url">/wrong_url</router-link></li>
-          </ul>
-          <hr>
-          <router-view class="view"></router-view>
-      </div>
-  </body>
-</html>
+<v-app>
+    <v-app-bar app>
+
+    <v-tabs>
+        <v-tab to="/">Index</v-tab>
+        <v-tab to="/about">About</v-tab>
+        <v-tab to="/incrementor">Incrementor</v-tab>
+        <v-tab to="/with_computed">With computed</v-tab>
+        <v-tab to="/wrong_url">Wrong URL</v-tab>
+    </v-tabs>
+    </v-app-bar>
+    <router-view class="view"></router-view>
+</v-app>

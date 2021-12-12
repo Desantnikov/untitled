@@ -1,6 +1,9 @@
 <template>
-  <h1>Home page
-  </h1>
+  <v-main>
+    <v-container>
+      Home page container
+    </v-container>
+  </v-main>
 </template>
 
 <script>

@@ -1,5 +1,7 @@
 <template>
-  <h1>About page</h1>
+  <v-main>
+About page
+  </v-main>
 </template>
 
 <script>
