@@ -5,7 +5,7 @@
     <h3>I: {{ i }}</h3>
     <h4>Check: {{ check }}</h4>
     <button v-on:click="$emit('input', value + 1)">Change value</button>
-    <button v-on:click="check = check + 1">Change check</button>
+    <button v-on:click="$emit('checkIncr', check + 1)">Change check</button>
     <br>
     <hr>
   </div>
@@ -14,11 +14,11 @@
 <script>
 export default {
   name: 'Second',
-  props: ['value', 'i'],
+  props: ['value', 'i', 'check'],
   data: function () {
     return {
       rand: Math.random(),
-      check: 1488,
+      // check: 1488,
     }
   },
 }

@@ -7,7 +7,8 @@
         :key="i"
         v-model="msg"
         :i="i"
-        :check="0"
+        :check="check"
+        v-on:checkIncr="(inpVal) => check = inpVal"
     />
   </div>
 </template>
@@ -22,9 +23,11 @@ export default {
     HelloWorld,
     Second
   },
-  data: () => ({msg: 0}),
+  data: () => ({
+    msg: 0,
+    check: 0,
+  }),
 }
-
 
 </script>
 

@@ -6,6 +6,8 @@ import About from "@/pages/About"
 import Incrementor from "@/pages/Incrementor"
 import NotFound from "@/pages/NotFound"
 
+import WithComputed from "./components/WithComputed"
+
 Vue.use(VueRouter)
 
 
@@ -16,6 +18,7 @@ const router = new VueRouter({
     { path: '/', component: Home },
     { path: '/about', component: About },
     { path: '/incrementor', component: Incrementor },
+    { path: '/with_computed', component: WithComputed },
     { path: '*', component: NotFound },
   ]
 })
