@@ -7,7 +7,7 @@
         :key="i"
         v-model="msg"
         :i="i"
-        :check="check"
+        :check="0"
     />
   </div>
 </template>
@@ -36,5 +36,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+img {
+  height: 2em
 }
 </style>

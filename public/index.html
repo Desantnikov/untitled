@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="">
   <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+      <div id="app">
+          <h1>Basic router</h1>
+          <ul>
+              <li><router-link to="/">/</router-link></li>
+              <li><router-link to="/about">/about</router-link></li>
+              <li><router-link to="/incrementor">/incrementor</router-link></li>
+              <li><router-link to="/wrong_url">/wrong_url</router-link></li>
+          </ul>
+          <hr>
+          <router-view class="view"></router-view>
+      </div>
   </body>
 </html>
