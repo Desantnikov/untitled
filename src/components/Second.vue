@@ -13,8 +13,6 @@
     <v-banner>Check: {{ check }}</v-banner>
     <v-btn v-on:click="$emit('input', value + 1)">Change value</v-btn>
     <v-btn v-on:click="$emit('checkIncr', check + 1)">Change check</v-btn>
-    <br>
-    <hr>
   </v-container>
 </template>
 
