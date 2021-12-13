@@ -8,6 +8,3 @@ name: "NotFound"
 }
 </script>
 
-<style scoped>
-
-</style>

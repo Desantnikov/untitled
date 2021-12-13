@@ -1,6 +1,7 @@
 <template>
   <v-main>
-About page
+    <v-card class="ma-12 display-3" >About</v-card>
+
   </v-main>
 </template>
 

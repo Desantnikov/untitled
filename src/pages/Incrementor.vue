@@ -1,16 +1,45 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld value="Welcome to Your Vue.js App"/>
-    <Second
-        v-for="i in Array(3).keys()"
-        :key="i"
-        v-model="msg"
-        :i="i"
-        :check="check"
-        v-on:checkIncr="(inpVal) => check = inpVal"
-    />
-  </div>
+  <v-main>
+    <v-container>
+
+      <v-row>
+
+        <v-col cols="4">
+          <v-img :src="require('../assets/logo.png')"/>
+        </v-col>
+
+        <v-col cols="4">
+          <HelloWorld value="Hello World! Value"/>
+        </v-col>
+
+        <v-col cols="4">
+          <v-img :src="require('../assets/logo.png')"/>
+        </v-col>
+
+      </v-row>
+
+
+      <v-row>
+
+        <v-col
+            v-for="i in Array(8).keys()"
+            :key="i"
+        >
+
+          <Second
+            v-model="msg"
+            :i="i"
+            :check="check"
+            v-on:checkIncr="(inpVal) => check = inpVal"
+          />
+
+        </v-col>
+
+      </v-row>
+
+
+    </v-container>
+  </v-main>
 </template>
 
 <script>
@@ -31,16 +60,3 @@ export default {
 
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-img {
-  height: 2em
-}
-</style>

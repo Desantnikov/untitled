@@ -1,13 +1,23 @@
-<v-app>
-    <v-app-bar app>
+<body>
+    <v-app>
+        <v-app-bar app>
 
-    <v-tabs>
-        <v-tab to="/">Index</v-tab>
-        <v-tab to="/about">About</v-tab>
-        <v-tab to="/incrementor">Incrementor</v-tab>
-        <v-tab to="/with_computed">With computed</v-tab>
-        <v-tab to="/wrong_url">Wrong URL</v-tab>
-    </v-tabs>
-    </v-app-bar>
-    <router-view class="view"></router-view>
-</v-app>
+            <v-tabs
+                    centered
+                    color="accent"
+                    class="accent"
+            >
+                <v-tab to="/">Index</v-tab>
+                <v-tab to="/about">About</v-tab>
+                <v-tab to="/incrementor">Incrementor</v-tab>
+                <v-tab to="/with_computed">With computed</v-tab>
+                <v-tab to="/wrong_url">Wrong URL</v-tab>
+            </v-tabs>
+
+        </v-app-bar>
+        <v-layout class="background">
+            <router-view></router-view>
+        </v-layout>
+
+    </v-app>
+</body>

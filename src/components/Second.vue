@@ -1,14 +1,21 @@
 <template>
-  <div class="hello">
-    <h1>Value: {{ value }}</h1>
-    <h2>Rand: {{ rand }}</h2>
-    <h3>I: {{ i }}</h3>
-    <h4>Check: {{ check }}</h4>
-    <button v-on:click="$emit('input', value + 1)">Change value</button>
-    <button v-on:click="$emit('checkIncr', check + 1)">Change check</button>
+  <v-container class="hello">
+    <v-banner
+        color="accent"
+        rounded
+    >
+      Value: {{ value }}
+    </v-banner>
+
+    <v-banner color="accent">Rand: {{ rand }}</v-banner>
+
+    <v-banner>I: {{ i }}</v-banner>
+    <v-banner>Check: {{ check }}</v-banner>
+    <v-btn v-on:click="$emit('input', value + 1)">Change value</v-btn>
+    <v-btn v-on:click="$emit('checkIncr', check + 1)">Change check</v-btn>
     <br>
     <hr>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -23,10 +30,3 @@ export default {
   },
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-br {
-  margin: 3em;
-}
-</style>

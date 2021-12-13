@@ -1,11 +1,12 @@
 <template>
-  <div>
-    <h1>Input value: {{ inputValue }}</h1>
-    <input v-model="inputValue">
-    <button v-on:click="compSettable = inputValue">Set header to text from input></button>
-
-    <h1>compSettable value: {{ compSettable }}</h1>
-  </div>
+  <v-container class="secondary">
+    <v-card outlined class="primary">
+      <v-card-title >Input value: {{ inputValue }}</v-card-title>
+      <v-text-field outlined v-model="inputValue"></v-text-field>
+      <v-btn v-on:click="compSettable = inputValue">Set header to text from input></v-btn>
+      <v-card-text class="accent">compSettable value: {{ compSettable }}</v-card-text>
+    </v-card>
+  </v-container>
 </template>
 
 <script>
@@ -29,7 +30,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>
